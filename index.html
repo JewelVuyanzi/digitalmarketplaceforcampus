@@ -3,9 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BB</title>
+    <title>Home page</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Hello world</h1>
+    <header>
+        <div class="header-container">
+    <h1 class="logo">KampiConnect</h1>
+    <nav class="navbar">
+        <ul class="nav-links" ;>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="Trending.html">Trending</a></li>
+            <li><a href="Categories.html">Product categories</a></li>
+            <li><a href="User.html">User</a></li>
+            <li><a href="Login.html">Login</a></li>
+            <li><a href="Sign up.html">Sign up</a></li>
+        </ul>
+    </nav>
+        <div class="search-container">
+            <form id="search-form" on-submit="return handleSearch(event)">
+                <div class="search-box">
+                    <span class="search-icon">&#128269;</span>
+                    <input type="search" id="search-input" placeholer="Search items" aria-label="Search through site content">
+                    <button type="submit" class="search-btn">Search</button>
+                </div>
+            </form>
+            </div>
+        </header>
+        <main>
+            <section class="hero">
+                <h2>Welcome to KampiConnect</h2>
+                <p>Your campus connection hub</p>
+            </section>
+        </main>
+            <footer>
+    <p>&copy; 2026 KampiConnect.All rights reserved.</p></footer>
+    <script src="script.js"></script>
 </body>
 </html>
